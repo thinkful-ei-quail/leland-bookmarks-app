@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    
+
+    <title>Bookmarks App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="errorContainer"></div>
+    <div class="row">
+             </div>
+        </div>
+    
+
+    <div class="container" id="form-wrapper">
+      <header role="banner">
+             <h1>My Bookmarks</h1>
+        </header>
+        <section role="region">
+       <form id="js-addBookmarkForm">
+        <div class="form-group">
+            <label>Site Name/Title</label>
+            <input type="text" class="form-control" id="js-bookmarkName" placeholder="What is the site's name?" required aria-label="bookmarkName">
+        </div>
+        <div class="form-group">
+            <label>Site URL</label>
+            <input type="text" class="form-control" id="js-bookmarkURL" placeholder="https://..." required aria-label="bookmarkURL">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" id="js-bookmarkDescription" placeholder="What is this site about...?" required aria-label="bookmark-description">
+        </div>    
+        <div class="form-group">
+            <label for="rating">Rating</label>
+            <select name="rating"  id="js-bookmarkRating"  aria-label="rating-dropdown">
+              <option value="1">1-Star</option>
+              <option value="2">2-Stars</option>
+              <option value="3">3-Stars</option>
+              <option value="4">4-Stars</option>
+              <option value="5">5-Stars</option>
+            </select>
+            </div>          
+            <button type="submit" class="btn-primary">Submit</button>    
+    </form> 
+</section>
+
+<section role="region">    
+        <div class="sort">
+          Sort for bookmarks with at least:
+          <select name="rating filter" class="js-bookmark-rating-filter" aria-label="rating-filter-dropdown">
+            <option value="1">1-Star</option>
+            <option value="2">2-Stars</option>
+            <option value="3">3-Stars</option>
+            <option value="4">4-Stars</option>
+            <option value="5">5-Stars</option>
+          </select>
+        </div>            
+</section>
+</div>
+
+
+<main role="main" aria-live="polite">
+    <section role="region">  
+                   <div class="panel-group bookmarks-list js-bookmarksList"  id="accordion" role="tablist" aria-multiselectable="true">             
+            </div>                     
+    </section>
+  </main>
+</body>
+</html>

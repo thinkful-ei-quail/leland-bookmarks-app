@@ -1,0 +1,58 @@
+ 
+ body {
+  background-color: lightgray;
+} 
+
+h1, form, .sort, section {
+  text-align: center;  
+}
+
+.form-group, section {
+  font-size: 24px;
+  padding: 5px;
+}
+
+#form-wrapper {
+max-width: 320px;
+border: 5px solid rgb(10, 10, 10);
+box-shadow: 5px 5px #888888;
+padding: 30px;
+margin: auto;
+margin-top: 40px;
+background-color: rgb(208, 205, 253); 
+}
+
+.btn-primary{
+  background-color: rgb(164, 75, 206);
+}
+
+.errorContainer {
+max-width: 320px;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 10px;
+margin: auto;
+color: red;
+text-transform: uppercase;
+}
+
+a {
+font-size: 28px;
+text-decoration: none;
+}
+
+.expand {
+  display: none;
+}
+
+.js-bookmark-rating {
+  display: block;
+} 
+
+
+
+
+
+
+
+
